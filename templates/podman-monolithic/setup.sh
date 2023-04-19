@@ -113,7 +113,7 @@ check_podman() {
     exit 1
   fi
 
-  local min="19.0.3" version
+  local min="4.5.0" version
 
   set +e
   version="$(podman version -f "{{.Server.Version}}" 2>&1)"
@@ -139,7 +139,7 @@ check_podman() {
 }
 
 check_podman_compose() {
-  local min="2.2.1" version command_status
+  local min="1.0.6" version command_status
 
   set +e
   version="$(podman-compose version --short 2>&1)"
