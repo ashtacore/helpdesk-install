@@ -109,7 +109,7 @@ configure_windows() {
 
 check_podman() {
   if ! check_command podman; then
-    printf "error: Install podman using the official installation instructions\n"
+    printf "error: Install podman using the official installation instructions https://podman.io/getting-started/installation\n"
     exit 1
   fi
 
